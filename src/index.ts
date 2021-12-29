@@ -18,8 +18,8 @@ setupUtils();
 const createWindow = (): void => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: config.IS_DEV ? 840 : 350,
-    height: 670,
+    width: config.IS_DEV ? config.SIZE.DEV_WIDTH : config.SIZE.WIDTH,
+    height: config.SIZE.HEIGHT,
     icon: config.ICON_PATH,
     webPreferences: {
       nodeIntegration: false,

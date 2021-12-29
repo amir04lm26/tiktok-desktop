@@ -2,10 +2,6 @@
   cursor: grabbing;
 }
 
-// footer ~ div.footer-guide {
-//   display: none;
-// }
-
 .footer-guide {
   display: none !important;
 }
@@ -17,3 +13,11 @@
 // .swiper-slide .sidebar {
 //   bottom: 95px !important;
 // }
+
+.backdrop-1 {
+  display: none !important;
+}
+
+.main-body footer {
+  height: 64px !important;
+}
