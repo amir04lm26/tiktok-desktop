@@ -12,7 +12,12 @@
     "publish": "cross-env TikTok_ENV=production electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
-  "keywords": [],
+  "keywords": [
+    "tiktok",
+    "tiktok_linux",
+    "tiktok_downloader",
+    "tiktok_player"
+  ],
   "author": {
     "name": "Amir",
     "email": "z.amir04lm26@gmail.com"
@@ -52,9 +57,11 @@
               "config": "./webpack/webpack.renderer.config.js",
               "entryPoints": [
                 {
-                  "html": "./src/index.html",
                   "js": "./src/renderer.ts",
-                  "name": "main_window"
+                  "name": "main_window",
+                  "preload": {
+                    "js": "./src/preload.ts"
+                  }
                 }
               ]
             }
@@ -81,11 +88,13 @@
     "eslint-plugin-import": "^2.20.0",
     "fork-ts-checker-webpack-plugin": "^6.0.1",
     "node-loader": "^2.0.0",
+    "sass": "^1.45.1",
     "style-loader": "^3.0.0",
     "ts-loader": "^9.2.2",
     "typescript": "^4.0.2"
   },
   "dependencies": {
+    "chokidar": "^3.5.2",
     "electron-squirrel-startup": "^1.0.0"
   }
 }

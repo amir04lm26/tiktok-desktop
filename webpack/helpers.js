@@ -5,9 +5,10 @@ const CWD_PATH = process.cwd();
 const aliases = {
   "@": path.resolve(CWD_PATH, "src"),
   "@assets": path.resolve(CWD_PATH, "src/assets/"),
+  "@constants": path.resolve(CWD_PATH, "src/constants/"),
+  "@schema": path.resolve(CWD_PATH, "src/schema/"),
   "@styles": path.resolve(CWD_PATH, "src/styles/"),
   "@utils": path.resolve(CWD_PATH, "src/utils/"),
-  "@constants": path.resolve(CWD_PATH, "src/constants/"),
 };
 
 const getPathAliases = () => aliases;

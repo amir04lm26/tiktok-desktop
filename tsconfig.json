@@ -13,9 +13,10 @@
     "noEmitOnError": false,
     "paths": {
       "@assets": ["assets"],
+      "@constants": ["constants"],
+      "@schema": ["schema"],
       "@styles": ["styles"],
-      "@utils": ["utils"],
-      "@constants": ["constants"]
+      "@utils": ["utils"]
     }
   },
   "include": [
