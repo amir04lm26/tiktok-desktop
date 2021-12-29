@@ -4,7 +4,7 @@ import { IInjectStyles } from "schema";
 import { SassWatcher } from "@utils";
 
 export const STYLES_PATH: IInjectStyles["styles"] = [
-  path.join(CWD_PATH, "src/styles/index.scss"),
+  path.join(CWD_PATH, "src/assets/styles/index.scss"),
 ];
 
 export const injectStyles = (

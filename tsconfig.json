@@ -12,10 +12,10 @@
     "resolveJsonModule": true,
     "noEmitOnError": false,
     "paths": {
+      "@": ["."],
       "@assets": ["assets"],
       "@constants": ["constants"],
       "@schema": ["schema"],
-      "@styles": ["styles"],
       "@utils": ["utils"]
     }
   },

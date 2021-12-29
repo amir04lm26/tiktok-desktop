@@ -7,7 +7,6 @@ const aliases = {
   "@assets": path.resolve(CWD_PATH, "src/assets/"),
   "@constants": path.resolve(CWD_PATH, "src/constants/"),
   "@schema": path.resolve(CWD_PATH, "src/schema/"),
-  "@styles": path.resolve(CWD_PATH, "src/styles/"),
   "@utils": path.resolve(CWD_PATH, "src/utils/"),
 };
 
