@@ -1,21 +1,21 @@
 {
   "name": "tiktok",
   "productName": "tiktok",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "version": "0.1.0",
+  "description": "Tiktok electron app",
   "main": ".webpack/main",
   "scripts": {
-    "start": "electron-forge start",
-    "dev": "electron-forge start --inspect-electron",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
+    "start": "cross-env TikTok_ENV=production electron-forge start",
+    "dev": "cross-env TikTok_ENV=development electron-forge start --inspect-electron",
+    "package": "cross-env TikTok_ENV=production electron-forge package",
+    "make": "cross-env TikTok_ENV=production electron-forge make",
+    "publish": "cross-env TikTok_ENV=production electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
   "author": {
     "name": "Amir",
-    "email": "40991530+amir04lm26@users.noreply.github.com"
+    "email": "z.amir04lm26@gmail.com"
   },
   "license": "MIT",
   "config": {
@@ -47,9 +47,9 @@
         [
           "@electron-forge/plugin-webpack",
           {
-            "mainConfig": "./webpack.main.config.js",
+            "mainConfig": "./webpack/webpack.main.config.js",
             "renderer": {
-              "config": "./webpack.renderer.config.js",
+              "config": "./webpack/webpack.renderer.config.js",
               "entryPoints": [
                 {
                   "html": "./src/index.html",
@@ -73,9 +73,11 @@
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "@vercel/webpack-asset-relocator-loader": "1.7.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.0.0",
     "electron": "16.0.5",
     "eslint": "^7.6.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.20.0",
     "fork-ts-checker-webpack-plugin": "^6.0.1",
     "node-loader": "^2.0.0",

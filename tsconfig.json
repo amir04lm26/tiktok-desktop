@@ -6,15 +6,23 @@
     "esModuleInterop": true,
     "noImplicitAny": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "outDir": "dist",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "noEmitOnError": false,
     "paths": {
-      "*": ["node_modules/*"]
+      "@assets": ["assets"],
+      "@styles": ["styles"],
+      "@utils": ["utils"],
+      "@constants": ["constants"]
     }
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }
