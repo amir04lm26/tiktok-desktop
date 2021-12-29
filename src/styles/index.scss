@@ -1,7 +1,19 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
-  background: pink;
+.tiktok-player {
+  cursor: grabbing;
 }
+
+// footer ~ div.footer-guide {
+//   display: none;
+// }
+
+.footer-guide {
+  display: none !important;
+}
+
+.tiktok-bottom {
+  bottom: 8px !important;
+}
+
+// .swiper-slide .sidebar {
+//   bottom: 95px !important;
+// }
