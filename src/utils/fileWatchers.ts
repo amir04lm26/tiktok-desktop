@@ -53,7 +53,6 @@ export class SassWatcher {
       if (config.IS_DEV) {
         compiledStyle = await compileAsync(this._stylePath);
         await writeFile(this._cssPath, compiledStyle, {
-          flag: "wx",
           encoding: "utf8",
         });
       } else {
@@ -71,7 +70,6 @@ export class SassWatcher {
     try {
       const compiledStyle = await compileAsync(filePath);
       await writeFile(this._cssPath, compiledStyle, {
-        flag: "wx",
         encoding: "utf8",
       });
       await this._contents.removeInsertedCSS(this._key);
